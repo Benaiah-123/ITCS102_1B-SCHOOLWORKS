@@ -1,0 +1,9 @@
+from activity24_1 import kyri, miles
+
+def number():
+    print(kyri, "is kyutie")
+    print("1 + 1")
+
+number()
+kyri('Cuarez')
+miles('duh')
