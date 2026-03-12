@@ -8,17 +8,17 @@ def add():
 def subtract():
     n1 = int(e1.get())
     n2 = int(e2.get())
-    result.config(text= "Answer: " + str(n1-n2))
+    result.config(text= f"the difference of {n1} and {n2} is "+str (n1-n2))
 
 def multiply():
     n1 = int(e1.get())
     n2 = int(e2.get())
-    result.config(text= "Answer: " + str(n1*n2))
+    result.config(text= f"the product of {n1} and {n2} is "+str (n1*n2))
 
 def divide():
     n1 = int(e1.get())
     n2 = int(e2.get())
-    result.config(text= "Answer:" + str(n1/n2))
+    result.config(text= f"the quotient of {n1} and {n2} is "+str (n1/n2))
 
 window = tk.Tk()
 window.title("Simple Calculator")
@@ -42,6 +42,7 @@ tk.Button(window, text ="Multiplication",  command=multiply).grid (row=5,column 
 tk.Button(window, text = "Division", command= divide).grid (row =5,column =1, padx=5, pady=5)
 
 window.mainloop()
+
 
 
 
